@@ -2,6 +2,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+https://www.youtube.com/watch?v=XtaP88IJwEg
 
 <strong>[EN]</strong>
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -9,7 +10,7 @@
 Setup;
 
 1;
-ensure sakasa-portak
+ensure sakasa-taco
 ensure mythic_progbar
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 We have finished step 1 of the process by assigning the start file to server.cfg or script.cfg,
@@ -19,23 +20,22 @@ We have finished step 1 of the process by assigning the start file to server.cfg
 2;
 Add the following to qb-core\shared\items.lua;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    --Portakal
-    ['portakal'] 			     = {['name'] = 'portakal', 			  	            ['label'] = 'Orange', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'portakal.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to process this.....'},
-    ['portakalsuyu'] 			 = {['name'] = 'portakalsuyu', 			  	        ['label'] = 'Orange Juice', 			['weight'] = 5, 		['type'] = 'item', 		['image'] = 'portakalsuyu.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I have to sell this.....'},
-    ['findik'] 			         = {['name'] = 'findik', 			  	            ['label'] = 'Hazelnut', 			        ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'findik.png', 	        ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to process this.....'},
-    ['nutella'] 			     = {['name'] = 'nutella', 			  	            ['label'] = 'Nutella', 			        ['weight'] = 6, 		['type'] = 'item', 		['image'] = 'nutella.png', 	        ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I have to sell this....'},
+     --Taco
+	['et'] 			     = {['name'] = 'et', 			  	        ['label'] = 'Minced meat', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'et.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to cook this....'},
+	['taco'] 			     = {['name'] = 'taco', 			  	        ['label'] = 'Taco', 			    ['weight'] = 3, 		['type'] = 'item', 		['image'] = 'taco.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to eat it or pack it....'},
+	['limon'] 			 = {['name'] = 'limon', 			  	['label'] = 'Muddy Lemon', 			['weight'] = 2, 		['type'] = 'item', 		['image'] = 'limon.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I have to wash this....'},
+	['marul'] 			     = {['name'] = 'marul', 			  	        ['label'] = 'Muddy Lettuce', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'marul.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I have to wash this....'},
+	['yikanmismarul'] 			     = {['name'] = 'yikanmismarul', 			  	        ['label'] = 'Marul', 			    ['weight'] = 1, 		['type'] = 'item', 		['image'] = 'yikanmismarul.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to prepare this....'},
+	['yikanmislimon'] 			     = {['name'] = 'yikanmislimon', 			  	        ['label'] = 'Lemon', 			    ['weight'] = 1, 		['type'] = 'item', 		['image'] = 'yikanmislimon.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to prepare this....'},
+	['paketlenmistaco'] 			     = {['name'] = 'paketlenmistaco', 			  	        ['label'] = 'Boxed Taco', 			    ['weight'] = 24, 		['type'] = 'item', 		['image'] = 'paketlenmistaco.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'I need to sell this....'},
 
 3;
-Attach the photos we provide in the file sakasa-portak\images.
+Attach the photos we provide in the file sakasa-taco\images.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Add it to qb-inventory\html\images,
 
 Add it to lj-inventory\html\images.
 
-4;
-You can select the language from sakasa-portak\fxmanifest.lua.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-![image](https://github.com/papdevelopment/qb-portak/assets/127118520/a45c23db-3faa-4889-aec6-97fbc187d442)
 
 
 That's all for installation.
@@ -50,7 +50,7 @@ That's all for installation.
 Kurulum;
 
 1;
-ensure sakasa-portak
+ensure sakasa-taco
 ensure mythic_progbar
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 server.cfg veya script.cfg'ye dosyayı başlatlarını atayarak işlemin 1. adımını bitirmiş bulunmaktayız,
@@ -58,23 +58,23 @@ server.cfg veya script.cfg'ye dosyayı başlatlarını atayarak işlemin 1. adı
 2;
 qb-core\shared\items.lua'ya aşağıdakileri ekleyiniz;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    --Portakal
-    ['portakal'] 			     = {['name'] = 'portakal', 			  	            ['label'] = 'Portakal', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'portakal.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu işlemem gerek....'},
-    ['portakalsuyu'] 			 = {['name'] = 'portakalsuyu', 			  	        ['label'] = 'Portakal Suyu', 			['weight'] = 5, 		['type'] = 'item', 		['image'] = 'portakalsuyu.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu satmam gerek....'},
-    ['findik'] 			         = {['name'] = 'findik', 			  	            ['label'] = 'Fındık', 			        ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'findik.png', 	        ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu işlemem gerek....'},
-    ['nutella'] 			     = {['name'] = 'nutella', 			  	            ['label'] = 'Nutella', 			        ['weight'] = 6, 		['type'] = 'item', 		['image'] = 'nutella.png', 	        ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu satmam gerek....'},
+    --Taco
+	['et'] 			     = {['name'] = 'et', 			  	        ['label'] = 'Kıyma', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'et.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu pişirmem gerek....'},
+	['taco'] 			     = {['name'] = 'taco', 			  	        ['label'] = 'Taco', 			    ['weight'] = 3, 		['type'] = 'item', 		['image'] = 'taco.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu yemem veya paketlemem gerek....'},
+	['limon'] 			 = {['name'] = 'limon', 			  	['label'] = 'Çamurlu Limon', 			['weight'] = 2, 		['type'] = 'item', 		['image'] = 'limon.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu yıkamam gerek....'},
+	['marul'] 			     = {['name'] = 'marul', 			  	        ['label'] = 'Çamurlu Marul', 			    ['weight'] = 2, 		['type'] = 'item', 		['image'] = 'marul.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu yıkamam gerek....'},
+	['yikanmismarul'] 			     = {['name'] = 'yikanmismarul', 			  	        ['label'] = 'Marul', 			    ['weight'] = 1, 		['type'] = 'item', 		['image'] = 'yikanmismarul.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu hazırlamam gerek....'},
+	['yikanmislimon'] 			     = {['name'] = 'yikanmislimon', 			  	        ['label'] = 'Limon', 			    ['weight'] = 1, 		['type'] = 'item', 		['image'] = 'yikanmislimon.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu hazırlamam gerek....'},
+	['paketlenmistaco'] 			     = {['name'] = 'paketlenmistaco', 			  	        ['label'] = 'Kutulanmış Taco', 			    ['weight'] = 24, 		['type'] = 'item', 		['image'] = 'paketlenmistaco.png', 	    ['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'bunu satmam gerek....'},
 
 3;
-sakasa-portak\images dosyasında verdiğimiz fotoları ekleyiniz.
+sakasa-taco\images dosyasında verdiğimiz fotoları ekleyiniz.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 qb-inventory\html\images adresine ekleyiniz,
  
 lj-inventory\html\images adresine ekleyiniz.
 
-4;
-Dil Seçimini sakasa-portak\fxmanifest.lua Adresinden Seçebilirsiniz.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-![image](https://github.com/papdevelopment/qb-portak/assets/127118520/37b78075-3e84-4113-b525-d63d8f1a5419)
+
 
 <strong>Kurulum bu kadar kolay gelsin.</strong>
 
