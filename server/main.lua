@@ -118,3 +118,10 @@ AddEventHandler("qb-pirates:malzemetopla", function()
                 Player.Functions.AddItem('marul', 1)
             end
     end)
+
+AddEventHandler('onResourceStart', function(resource)
+        if resource == GetCurrentResourceName() then
+            Citizen.Wait(5000)
+            print('[^2sakasa-taco^0] - ^1Started Version-1^0')
+        end
+    end)
